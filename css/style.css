@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Righteous&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#01174B, #161B2C);
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: "Righteous", sans-serif;
+  padding: 1rem;
+  letter-spacing: .25rem;
+}
+
+header a img {
+  height: 50px;
+  margin-left: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  background-color: rgba(72, 96, 142, 0.1);
+  border-radius: 10px;
+  padding: .4rem;
+}
+
+nav ul {
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+nav li{
+  font-family: "Inter", sans-serif;
+  margin: 0 .5rem 0 .5rem;
+  list-style: none;
+  transition: 300ms ease-in;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+nav li:hover {
+  font-size: 1.1rem;
+}
+
+#current {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#logo {
+  height: 100%;
+}
+
+#icons {
+  align-items: center;
+  background-color: rgba(72, 96, 142, 0.1);
+  border-radius: 10px;
+  margin-right: 1rem;
+  justify-content: space-between;
+}
+
+#icons img {
+  border-radius: .5rem;
+  margin: .25rem;
+  padding: 1rem;
+}
+
+#icons img:hover {
+  background-color: rgba(174, 184, 213, 0.1);
+}
+
+footer {
+  background-color: rgba(174, 184, 213, 0.1);
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-top: 1rem;
+}
+
+footer div {
+  margin-left: 2rem;
+  justify-content: space-between;
+}
+
+footer ul {
+  text-align: start;
+  margin: 2rem auto;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer #important-links ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  list-style: none;
+  font-weight: bold;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+iframe {
+  margin-top: 1rem;
+  width: 70%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  #icons {
+    width: max-content;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav, #icons {
+    margin-bottom: 1rem;
+  }
+
+  nav, #icons {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  footer .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  nav ul {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  footer #important-links ul{
+    flex-direction: column;
+  }
+
+  footer #important-links li {
+    margin-bottom: .75rem;
+  }
+}

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MyFlix</title>
+        <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/movie.css" />
+    </head>
+
+    <body>
+        <header class="flex" role="banner"> 
+            <a href="home.html" class="flex">
+                <img src="images/logo.svg" alt="Logo" />
+                <h1>MyFlix</h1>
+            </a>
+            <nav role="navigation">
+                <ul class="flex">
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="movies.html" id="current">Movies</a>
+                    </li>
+                    <li>
+                        <a href="genre.html">Genre</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <section id="icons" class="flex" role="region">
+                <div id="search" role="search">
+                    <label for="search-input">
+                        <img
+                            src="images/search.svg"
+                            alt="Search"
+                            id="search-icon"
+                        />
+                    </label>
+                    <input type="text" id="search-input" placeholder="Search" />
+                </div>
+
+                <img src="images/account.svg" alt="Account" id="account" />
+            </section>
+        </header>
+
+        <main role="main">
+            <form id="filter" class="flex" role="form">
+                <div>
+                    <label for="genre">Genre: </label>
+                    <select name="genre" id="genre">
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="crime">Crime & Mystery</option>
+                        <option value="death-game">Death Game</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="historical">Historical</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="satire">Satire</option>
+                        <option value="science">Science Fiction</option>
+                        <option value="speculative">Speculative</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="isekai">Isekai</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="publisher">Publisher: </label>
+                    <input type="text" name="publisher" id="publisher" />
+                </div>
+
+                <div class="flex">
+                    <label for="year">Year: </label>
+                    <input
+                        type="range"
+                        name="year"
+                        id="year"
+                        min="1980"
+                        max="2024"
+                    />
+                </div>
+                <div>
+                    <button type="submit">Filter</button>
+                </div>
+            </form>
+
+            <section class="movie-grid" role="region">
+                <div class="movie-card">
+                    <img src="images/image1.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">MIRZAPUR 3</span>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="images/image2.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">SHOLAY</span>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <img src="images/image3.jpeg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">MY NAME IS KHAN</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image4.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">ANNABELLA</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image5.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">GOLMAAL</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-grid" role="region">
+                <h2>Bollywood</h2>
+
+                <div class="movie-card">
+                    <img src="images/Image6.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">HUM SAATH SAATH HAIN</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image7.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">HUM AAPKE HAIN KOUN</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image8.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">SILSILA</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image9.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">DABANGG</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image10.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">SARKAR</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-grid" role="region">
+                <h2>Horror</h2>
+
+                <div class="movie-card">
+                    <img src="images/image11.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">The COUNJURING</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image12.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">THE POP EXORCIST</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/image13.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">MAMA</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image14.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">LUPT</span>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="images/Image15.jpg" alt="Movie Title" />
+                    <div class="movie-info">
+                        <span class="prime">BHOOT</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <div class="flex">
+                <div>
+                    <div>Designed and Made by Harsh, Jasdeep & Manthan</div>
+                    <div>&copy; 2024 MyFlix. All rights reserved.</div>
+
+                    <ul>
+                        <li>
+                            <a href="https://fonts.google.com/icons">
+                                Google Fonts
+                            </a>
+                            for website icon
+                        </li>
+                        <li>
+                            <a
+                                href="https://blog.hubspot.com/website/horizontal-scrolling"
+                            >
+                                HubSpot
+                            </a>
+                            for Horizontal Scrolling
+                        </li>
+                        <li>
+                            <a href="https://disney.com"> Disney </a>
+                            for Movie posters
+                        </li>
+                        <li>
+                            <a
+                                href="https://en.wikipedia.org/wiki/List_of_genres"
+                            >
+                                WikiPedia
+                            </a>
+                            for List of Genres
+                        </li>
+                        <li>
+                            <a href="https://publimetry.com/whats-a-genre/">
+                                Publimetry
+                            </a>
+                            for Genre Hero Image
+                        </li>
+                        <li>
+                            <a
+                                href="https://wallpapercave.com/wp/wp10615937.jpg"
+                            >
+                                WallpaperCave
+                            </a>
+                            for About Us Hero Image
+                        </li>
+                        <li>
+                            <a
+                                href="https://wallpaperaccess.com/full/3658604.jpg"
+                            >
+                                WallpaperCave
+                            </a>
+                            for About Us Second Image
+                        </li>
+                        <li>
+                            <a href="https://range-input-css.netlify.app/"
+                                >Range Input CSS</a
+                            >
+                            for CSS of input slider
+                        </li>
+                    </ul>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11597.582511179766!2d-80.4147113737979!3d43.38965963310963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b9018e9e89adf%3A0x2043c24369ede07e!2sConestoga%20College%20Kitchener%20-%20Doon%20Campus!5e0!3m2!1sen!2sca!4v1723872517180!5m2!1sen!2sca"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Conestoga College Kitchener - Doon Campus"
+                ></iframe>
+            </div>
+
+            <div class="flex" id="important-links">
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Use</li>
+                    <li>Help Center</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
