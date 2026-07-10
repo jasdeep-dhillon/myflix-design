@@ -1,27 +1,50 @@
-# HTML, CSS, JS (Auto Refresh)
+# myflix-design
 
-This template is a starter for building a website with HTML, CSS and JS, powered by [Vite](https://vitejs.dev/). HTML provides the basic structure, CSS controls formatting, and JavaScript controls the behavior of different elements.
+A front-end movie streaming platform design built with HTML, CSS, and JavaScript, powered by Vite.
 
-Hit run to see this project in action. It will auto-refresh as you edit the HTML, CSS and JS files.
+## Features
 
-## Disable Auto Refresh
+- Home page with hero banner and horizontally scrolling movie carousels
+- Movies browsing page
+- Genre-based browsing page
+- About Us page
+- Responsive navigation header with search and account icons
+- Modern card-based UI for movie posters
+- Vite-powered development with hot module reloading (HMR)
 
-If you find the auto refresh getting in your way, go to [vite.config.js](./vite.config.js) and update it set `hmr` to false to disable hot module reloading (HMR). The full config will look like this:
+## Technologies
 
-```js
-export default defineConfig({
-  plugins: [],
-  server: {
-    host: '0.0.0.0',
-    hmr: false, // Change this line to `false` disable auto-refreshing.
-  }
-})
+- HTML5
+- CSS3 (custom properties, flexbox, grid)
+- JavaScript
+- Vite
+
+## Project Structure
+
+```
+home.html          - Home page with hero and trending sections
+movies.html        - Movies listing page
+genre.html         - Genre browsing page
+about.html         - About Us page
+script.js          - JavaScript (empty, placeholder for future functionality)
+vite.config.js     - Vite configuration
+css/
+  style.css        - Global styles
+  home.css         - Home page styles
+  movie.css        - Movie page styles
+  categories.css   - Genre page styles
+  about.css        - About page styles
+images/            - Image assets (logos, posters, icons)
 ```
 
-## Packages
+## How to Run
 
-Because this template uses Vite to build your code, you can add install and use npm packages. Simple open the Packager tool to search and manage your packages.
-
-## Learn More
-
-Check out [the vite docs](https://vitejs.dev) to learn more about configuring a frontend application.
+1. Install dependencies:
+   ```
+   npm install
+   ```
+2. Start the development server:
+   ```
+   npm run dev
+   ```
+3. Visit the URL shown in the terminal (default: `http://localhost:5173`)
